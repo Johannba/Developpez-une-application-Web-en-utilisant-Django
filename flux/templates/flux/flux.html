@@ -1,0 +1,29 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 mt-4">
+                <a href="{% url 'create_ticket' %}"><button class="button-critique-flux" type="submit " style="width: 12rem;">Demander une critique</button></a>
+                <a href="{% url 'ticket_review' %}"><button class="button-critique-flux" type="submit" style="width: 12rem;">Créer un critique</button></a>
+            </div>
+        </div>
+</div>
+        <br><br>
+   {% for post in posts %}
+        <div class="container-flux">
+        <div class="row justify-content-center">
+        {% if post.contente_type == "TICKET" %}
+            {% include 'flux/ticket_snippet.html' %}
+        {% endif %}
+        {% if post.contente_type == "REVIEW" %}
+            {% include 'flux/review_snippet.html' %}
+        {% endif %}
+    </div>
+</div>
+        </div>
+        </div>
+        </div>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+        <br><br>
+    {% for post in posts %}
+        <div class="container-flux">
+        <div class="row justify-content-center">
+        {% if post.contente_type == "TICKET" %}
+
+        <div class="col-7 mt-4">
+            <div class="card w-75">
+              <div class="card-body">
+                  <p class="user-post">vous avez publié un ticket</p>
+                <h2 class="text-center">{{ post.title }}</h2>
+              <br><br>
+              <p class="text-center">{{ post.description }}</p>
+                <img class="card-img-bottom" src="{{ post.image.url }}" alt="Card image cap">
+                  <!-- IF ticket.is_reviwed-->
+                <a class="button-flux" href="{% url 'edit_ticket' post.id %}"><button type="submit " >Modifier </button></a>
+                <a class="button-flux" href="{% url 'delete_ticket' post.id %}"><button type="submit " >Supprimer </button></a>
+              </div>
+            </div>
+        </div>
+        {% endif %}
+        {% if post.contente_type == "REVIEW" %}
+        <div class="col-7 mt-4">
+            <div class="card w-75">
+              <div class="card-body">
+                  <p class="user">vous avez publié une critique</p>
+                  <h2 class="text-titre">{{ post.headline }} - review {{ post.rating }}</h2>
+                  <h3 class="text-titre"> {{ post.body }} </h3>
+                    <div class="card-body">
+                        <h4 class="text-titre">Ticket - {{ post.ticket.user }}</h4>
+                        <h4 class="text-titre">{{ post.ticket.title }}</h4>
+                        <img class="card-img-bottom" src="{{ post.ticket.image.url }}" alt="Card image cap">
+                    </div>
+                    <a class="button-flux" href="{% url 'edit_review' post.id %}"><button type="submit " >Modifier </button></a>
+                    <a class="button-flux" href="{% url 'delete_review' post.id %}"><button type="submit " >Supprimer </button></a>
+              </div>
+            </div>
+        </div>
+
+        {% endif %}
+    </div>
+</div>
+    {% endfor %}
+{% endblock content %}
+

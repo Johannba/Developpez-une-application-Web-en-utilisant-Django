@@ -1,0 +1,128 @@
+
+#id_headline, #id_title, textarea {
+    display: block;
+    padding: .75rem;
+    line-height: 1. 5;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius : .25rem;
+    min-width: 600px;
+}
+
+#id_rating{
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+}
+
+#id_rating_0, #id_rating_1, #id_rating_2, #id_rating_3, #id_rating_4, #id_rating_5{
+    width: 60px;
+}
+
+.button-flux{
+    margin-left: 30rem;
+}
+
+.critique{
+    margin-left: 22rem;
+}
+
+.button-critique-flux{
+    margin-left: 7rem;
+}
+
+.container-flux{
+   margin-left: 17rem;
+}
+
+.button-review {
+    margin: 1em auto;
+    margin-left: 36rem;
+    border-radius : .30rem;
+    min-width: 6rem;
+}
+
+h2.créer-une-critique{
+    margin-left: 12rem;
+}
+
+.livre-article{
+    margin-left: -2rem;
+}
+
+.card-body{
+     border: 1px solid black;
+     padding: 5px;
+ }
+
+text-titre{
+         display: block;
+         width: 25%;
+         text-align : right;
+}
+
+.button-follow{
+       display: block;
+       margin-left: 88rem;
+}
+
+h2.follow{
+    text-align: center;
+    margin: 3rem;
+}
+
+.row-follow{
+    margin: 3rem;
+}
+
+h2 review-form{
+    text-align: center;
+}
+
+h3.critique{
+     text-align: center;
+}
+
+.inscrit{
+    margin-left: 85rem;
+    margin-top: 5%
+}
+.inscrit-page h2,input#id_password,input#id_username,label[for=id_username],label[for=id_password]{
+    display : block;
+    text-align: center;
+    margin-left: 50rem;
+    width: 30rem;
+}
+.connecter{
+    margin-left:63rem;
+}
+
+::marker{
+     color:width;
+     margin-left: -68rem;
+}
+
+.inscrivez-vous{
+       margin-left: 20rem;
+       margin-top: -11%;
+       padding: 1%;
+}
+
+.button-inscrivez-vous{
+    margin-left: 28rem;
+    width: 60px;
+}
+
+.inscription-page{
+    margin-left: 36rem;
+}
+
+p.date_review{
+    margin-left: 33rem;
+}
+.button-ticket{
+    margin-left: 36rem;
+}
+.critique-review{
+    text-align: center;
+}

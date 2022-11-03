@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c56c4bb3-90c5-4d5b-91cf-9bd49f95f53c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.flake8" beforeDir="false" afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flux/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flux/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flux/migrations/0003_remove_review_ticket.py" beforeDir="false" afterPath="$PROJECT_DIR$/flux/migrations/0003_remove_review_ticket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flux/templates/flux/create_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/flux/templates/flux/create_review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flux/templates/flux/edit_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/flux/templates/flux/edit_review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flux/templates/flux/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flux/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/flux/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flux/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flux/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9" beforeDir="false" afterPath="$PROJECT_DIR$/projet9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/flux/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/flux/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/flux/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/flux/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/flux/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/flux/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/flux/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/flux/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/flux/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/flux/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/follower/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/follower/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/follower/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/follower/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/follower/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/follower/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/follower/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/follower/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/user/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/user/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet9/user/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet9/user/validators.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E4Yd8IqlAhsTXkZdLfdegtsXDM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/johann/projet9&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/flux/templates/flux" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="projet9V2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="projet9V2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="projet9V2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="projet9V2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="projet9V2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="projet9V2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c56c4bb3-90c5-4d5b-91cf-9bd49f95f53c" name="Changes" comment="" />
+      <created>1661856407421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661856407421</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

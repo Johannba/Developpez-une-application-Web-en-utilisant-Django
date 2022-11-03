@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% extends 'base.html' %}
+{% block content %}
+<div class="inscrit-page">
+    <h2>Connectez-vous</h2>
+    <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button class="connecter" type="submit" >Se connecter</button>
+    </form>
+</div>
+    <h2 class="inscrivez-vous">Inscrivez-vous maintenant</h2>
+        <a class="button-inscrivez-vous" href="{% url 'signup' %}"><button type="submit" >S’inscrire</button></a>
+
+{% endblock content %}

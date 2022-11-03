@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h3 class="critique-review">Critique</h3>
+<br>
+<div class="container">
+    <div class="row justify-content-center">
+    <div class="card w-75">
+        <p>Vous êtes en train de poster en réponse à</p>
+        <div class="card-body">
+            <p class="user">{{ post.user }} a demandé une critique</p>
+            <h2 class="text-center">{{ post.title }}</h2>
+            <br><br>
+            <p class="text-center">{{ post.description }}</p>
+            <img class="card-img-bottom" src="{{ post.image.url }}" alt="Card image cap">
+        </div>
+    </div>
+        <div class="col-6">
+            <form method="post" enctype="multipart/form-data">
+                {{ form.as_table }}
+                {% csrf_token %}
+                <button class="button-review" type="submit" >Envoyer</button>
+                <br>
+            </form>
+       </div>
+   </div>
+</div>
+{% endblock content %}

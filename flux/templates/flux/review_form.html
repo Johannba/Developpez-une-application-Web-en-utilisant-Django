@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% block content %}
+
+  <h2 class="review-form">Critique</h2>
+<br>
+  <div class="mx-auto text-center" style="width: 60rem; margin-left: 30px ">
+        <br><br>
+    {% for review in reviews %}
+        <div class="card w-75">
+          <div class="card-body form-control">
+              <h2>{{ review.headline }}</h2>
+              <br><br>
+              <p class="card-text">{{ review.body }}</p>
+          </div>
+            <div>
+                 <p class="card-text">Review {{ review.rating }}</p>
+            </div>
+            <div class="card w-75">
+          <div class="card-body">
+              <h2>{{ review.ticket.title }}</h2>
+              <br><br>
+              <p class="card-text">{{ review.ticket.description }}</p>
+          </div>
+            <img class="card-img-bottom" src="{{ review.ticket.image.url }}" alt="Card image cap">
+        </div>
+        </div>
+    {% endfor %}
+{% endblock content %}

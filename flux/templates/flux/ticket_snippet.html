@@ -1,0 +1,17 @@
+<div class="col-7 mt-4">
+    <div class="card w-75">
+        <div class="card-body">
+            <p class="user">{{ post.user }} a demandé une critique</p>
+            <h2 class="text-center">{{ post.title }}</h2>
+            <br><br>
+            <p class="text-center">{{ post.description }}</p>
+            <img class="card-img-bottom" src="{{ post.image.url }}" alt="Card image cap">
+
+            {% if not post.is_reviewed %}
+                <a class="button-flux" href="{% url 'response_ticket' post.id %}">
+                    <button type="submit " >Créer une critique</button>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
