@@ -4,16 +4,22 @@
 
     <h3 class="critique">Modifier une critique</h3>
         <br>
+
        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6">
+                    <div class="card-body">
+                        <h6 class="text-user"> {{ object.ticket.user }} a demandé une critique</h6>
+                        <h6 class="text-title"> {{ object.ticket.title }}</h6>
+                        <h6 class="text-title"> {{ object.ticket.body }}</h6>
+                        <img class="card-img-bottom" src="{{ object.ticket.image.url }}" alt="Card image cap">
+                    </div>
         <form method="post" enctype="multipart/form-data">
              {{ form.as_table }}
             {% csrf_token %}
-                <img class="card-img-bottom" src="{{ post.ticket.image.url }}" alt="Card image cap">
             <button class="button-review" type="submit" >Modifier</button>
             <br>
-    </form>
+        </form>
            </div>
        </div>
    </div>
