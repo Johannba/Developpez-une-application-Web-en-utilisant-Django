@@ -90,8 +90,8 @@ h3.critique{
 .inscrit-page h2,input#id_password,input#id_username,label[for=id_username],label[for=id_password]{
     display : block;
     text-align: center;
-    margin-left: 50rem;
-    width: 30rem;
+    margin-left: 45rem;
+    width: 40rem;
 }
 .connecter{
     margin-left:63rem;
@@ -102,19 +102,15 @@ h3.critique{
      margin-left: -68rem;
 }
 
-.inscrivez-vous{
-       margin-left: 20rem;
-       margin-top: -11%;
+h2.inscrivez-vous {
+       margin-left: 18rem;
+       margin-top: -10%;
        padding: 1%;
 }
 
 .button-inscrivez-vous{
     margin-left: 28rem;
     width: 60px;
-}
-
-.inscription-page{
-    margin-left: 36rem;
 }
 
 p.date_review{
@@ -125,4 +121,43 @@ p.date_review{
 }
 .critique-review{
     text-align: center;
+}
+
+input#id_password2,label[for=id_password2],input#id_password1,label[for=id_password1],.form-inscription ul li{
+    display : block;
+    text-align: center;
+    margin-left: 45rem;
+    width: 40rem;
+    margin-top: 2rem;
+}
+.sinscrire{
+    display: flex;
+    text-align: center;
+    margin-left: 82rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+}
+.retour-connection{
+      display: flex;
+    text-align: center;
+    margin-left: 75rem;
+    margin-top: -1.9rem;
+    width: 5rem;
+    border-radius: 10px;
+}
+
+
+.Inscrivez-vous{
+    display: flex;
+    text-align: center;
+    margin-left: 60rem;
+    margin-top: 0.5rem;
+    width: 30rem;
+}
+span.helptext{
+        display : block;
+    text-align: center;
+    margin-left: 40rem;
+    width: 60rem;
+    margin-top: 1rem;
 }

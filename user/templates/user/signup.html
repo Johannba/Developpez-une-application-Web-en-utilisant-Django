@@ -2,8 +2,8 @@
 <html lang="fr">
 {% extends 'base.html' %}
 {% block content %}
-<div class="inscription-page">
-    <h2>Inscrivez-vous</h2>
+<div class="form-inscription">
+    <h2 class ="Inscrivez-vous">Inscrivez-vous</h2>
     {% if form.errors %}
         {{ form.errors }}
     {% endif %}
@@ -11,8 +11,8 @@
     <form method="post">
         {{ form.as_p }}
         {% csrf_token %}
-        <button type="submit" >S’inscrire</button>
+        <button class="sinscrire" type="submit" >S’inscrire</button>
     </form>
-    <a href="{% url 'logout' %}"><button type="submit" >Retour</button></a>
+    <a href="{% url 'logout' %}"><button class="retour-connection" type="submit" >Retour</button></a>
 </div>
 {% endblock content %}
