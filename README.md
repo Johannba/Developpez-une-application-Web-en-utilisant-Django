@@ -13,7 +13,7 @@ L'application est un réseau social permettant de demander et poster des critiqu
 * Publier des demandes de critique.
 * Publier des critiques en réponse à une demande ou pas en réponse.
 * Modifier / supprimer ses demandes et critiques.
-* Consulter son profil, ses abonnements, changer sa photo de profil.
+* Consulter son profil, ses abonnements.
 * Consulter le profil et les abonnements d'un autre ustilisateur.
 * S'abonner / se désabonner d'un autre utilisateur.
 * Rechercher un utilisateur.
@@ -24,7 +24,7 @@ Commencez tout d'abord par installer Python 3.10.
 Si vous souhaitez modifier le style, il est préférable d'installer Sass plutôt que d'éditer directement static/css/style.css.  
 Lancez ensuite la console, placez vous dans le dossier de votre choix puis clonez ce repository:
 ```
-git clone https://github.com/Johannba/projet9.git
+git clone https://github.com/Johannba/projet9v4.git
 ```
 Placez vous dans le dossier projet9, puis créez un nouvel environnement virtuel:
 ```
