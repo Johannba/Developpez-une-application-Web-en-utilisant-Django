@@ -13,7 +13,7 @@ L'application est un réseau social permettant de demander et poster des critiqu
 * Publier des demandes de critique.
 * Publier des critiques en réponse à une demande ou pas en réponse.
 * Modifier / supprimer ses demandes et critiques.
-* Consulter son profil, ses abonnements, changer sa photo de profil.
+* Consulter son profil, ses abonnements.
 * Consulter le profil et les abonnements d'un autre ustilisateur.
 * S'abonner / se désabonner d'un autre utilisateur.
 * Rechercher un utilisateur.
