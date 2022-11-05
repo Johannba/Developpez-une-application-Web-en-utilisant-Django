@@ -1,5 +1,3 @@
-
-
 class ContainsLetterValidator:
     def validate(self, password, user=None):
         pass

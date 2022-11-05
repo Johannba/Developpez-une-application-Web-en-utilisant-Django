@@ -59,7 +59,7 @@ ROOT_URLCONF = "litreview.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR.joinpath('templates')],
+        "DIRS": [BASE_DIR.joinpath("templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -120,8 +120,8 @@ AUTH_USER_MODEL = "user.CustomUser"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'flux'
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "flux"
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = 'media/'
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "media/"
