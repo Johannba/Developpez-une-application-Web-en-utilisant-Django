@@ -3,6 +3,8 @@ from django.views.generic import UpdateView
 from django.contrib.auth.decorators import login_required
 from django.db.models import Value, CharField, Q
 from django.shortcuts import redirect, render
+from django.http import HttpResponseForbidden
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from itertools import chain
 
@@ -38,7 +40,7 @@ def create_review(request):
             return redirect("review_form")
     return render(request, "flux/create_review.html", context={"form": form})
 
-
+@login_required
 def post(request):
     tickets = models.Ticket.objects.filter(user=request.user)
     reviews = models.Review.objects.filter(user=request.user)
@@ -49,7 +51,7 @@ def post(request):
     posts = sorted(chain(tickets, reviews), key=lambda x: x.time_created, reverse=True)
     return render(request, "flux/posts.html", context={"posts": posts})
 
-
+@login_required
 def flux(request):
     following = Follow.objects.filter(user__exact=request.user)
     tickets = models.Ticket.objects.filter(
@@ -65,12 +67,12 @@ def flux(request):
     posts = sorted(chain(tickets, reviews), key=lambda x: x.time_created, reverse=True)
     return render(request, "flux/flux.html", context={"posts": posts})
 
-
+@login_required
 def review_flux(request):
     reviews = models.Review.objects.all()
     return render(request, "flux/review_form.html", context={"reviews": reviews})
 
-
+@login_required
 def response_ticket(request, ticket_id):
     form = forms.ReviewForm()
     ticket = models.Ticket.objects.get(pk=ticket_id)
@@ -88,7 +90,7 @@ def response_ticket(request, ticket_id):
         request, "flux/create_review.html", context={"form": form, "post": ticket}
     )
 
-
+@login_required
 def ticket_review(request):
     ticket_form = forms.TicketForm()
     review_form = forms.ReviewForm()
@@ -112,30 +114,46 @@ def ticket_review(request):
     return render(request, "flux/ticket_review.html", context=context)
 
 
-class EditReview(UpdateView):
+class EditReview(LoginRequiredMixin, UpdateView):
     model = Review
     form_class = ReviewForm
     template_name = "flux/edit_review.html"
     success_url = reverse_lazy("posts")
 
+    def dispatch(self, request, *args, **kwargs):
+        review = Review.objects.get(id__exact=kwargs['pk'])
+        if review.user == request.user:
+            return super().dispatch(request, *args, **kwargs)
+        return HttpResponseForbidden()
 
+@login_required
 def delete_review(request, review_id):
     review = Review.objects.get(id__exact=review_id)
-    ticket = review.ticket
-    ticket.is_reviewed = False
-    ticket.save()
-    review.delete()
-    return redirect("posts")
+    if review.user == request.user:
+        ticket = review.ticket
+        ticket.is_reviewed = False
+        ticket.save()
+        review.delete()
+        return redirect("posts")
+    return HttpResponseForbidden()
 
-
+@login_required
 def delete_ticket(request, ticket_id):
     ticket = Ticket.objects.get(id__exact=ticket_id)
-    ticket.delete()
-    return redirect("posts")
+    if ticket.user == request.user:
+        ticket.delete()
+        return redirect("posts")
+    return HttpResponseForbidden()
 
 
-class EditTicket(UpdateView):
+class EditTicket(LoginRequiredMixin, UpdateView):
     model = Ticket
     form_class = TicketForm
     template_name = "flux/edit_ticket.html"
     success_url = reverse_lazy("posts")
+
+    def dispatch(self, request, *args, **kwargs):
+        ticket = Ticket.objects.get(id__exact=kwargs['pk'])
+        if ticket.user == request.user:
+            return super().dispatch(request, *args, **kwargs)
+        return HttpResponseForbidden()

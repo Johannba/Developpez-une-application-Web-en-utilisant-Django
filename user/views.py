@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login, logout
-from user.models import CustomUser
+from django.contrib.auth.decorators import login_required
 from django.views.generic import View
-from user.forms import LoginForm
 from django.conf import settings
+
+from user.models import CustomUser
+from user.forms import LoginForm
 from . import forms
 
 
@@ -34,7 +36,7 @@ class LoginPageViews(View):
             request, self.template_name, context={"form": form, "message": message}
         )
 
-
+@login_required
 def logout_user(request):
     logout(request)
     return redirect("login")

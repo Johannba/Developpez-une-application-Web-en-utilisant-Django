@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
-from follower.models import Follow
 from django.contrib.auth import get_user_model
+from django.contrib.auth.decorators import login_required
+
+from follower.models import Follow
 
 
+@login_required
 def followers(request):
     following = Follow.objects.filter(user__exact=request.user)
     following_by = Follow.objects.filter(followed_user__exact=request.user)
@@ -22,6 +25,7 @@ def followers(request):
     return render(request, "followers/followers.html", context=context)
 
 
+@login_required
 def delete_follower(request, follow_id):
     User = get_user_model()
     user = User.objects.get(id__exact=follow_id)
